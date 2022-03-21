@@ -2,6 +2,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#divId").load("b.html"); 
+    });
+    </script> 
+    
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -80,7 +87,7 @@
 <p>For more details see <a href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a>.</p>
 
       
-<iframe src="http://www.bing.com" style="width: 90%; height: 300px"></iframe>
+<div id="divId" style="display:none;"></div>
     
       
 <h3 id="jekyll-themes">Jekyll Themes</h3>
