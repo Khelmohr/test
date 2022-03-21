@@ -116,15 +116,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-<script>
-  
-async function createIframe(){
-      iframe = new iFrameX(options);
-      iframe.create();
-      iframe.gateway = function (data) { // Parent listener
-        console.log(data);
-        iframe.sendMessage('CustomEventName', {date: new Date(), message: "Sent from parent to iframe"}); // Parent sender
-      }
-    }
-
-</script>
