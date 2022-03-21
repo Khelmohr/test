@@ -81,9 +81,15 @@
 <p>For more details see <a href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a>.</p>
 
  
-<iframe src="test.html" title="Iframe Example"></iframe>      
+<iframe onload="resizeIframe(this) src="test.html" title="Example"></iframe>      
 
-     
+<script type="text/javascript">
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+</script>  
+      
+      
       
 <h3 id="jekyll-themes">Jekyll Themes</h3>
 
