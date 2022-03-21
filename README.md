@@ -36,14 +36,13 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
   <script>
   const iframe = new iFrameX(options);
   iframe.create();
-  </script>
   
   const attributes = {
   width: 100,
   height: 100,
   class: 'myiframe'
   };
-  
+  </script>
   
 
 
