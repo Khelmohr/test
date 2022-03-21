@@ -33,8 +33,10 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
   <!-- Load iFrameXJS -->
   <script src="../iFrameX/dist/iframex.min.js"></script>
   
+  <script>
   const iframe = new iFrameX(options);
   iframe.create();
+  </script>
   
   const attributes = {
   width: 100,
