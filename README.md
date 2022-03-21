@@ -29,7 +29,7 @@ Syntax highlighted code block
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 
-<iframe src="https://github.com/Khelmohr/test/blob/main/iframe.html" title="description"></iframe>
+<iframe src="https://www.w3schools.com/html/html_iframe.asp" title="description"></iframe>
 
 ### Jekyll Themes
 
