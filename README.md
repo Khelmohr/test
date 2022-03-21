@@ -29,6 +29,30 @@ Syntax highlighted code block
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 
+
+const iframe = new iFrameX(options);
+iframe.create();
+
+const attributes = {
+  width: 100,
+  height: 100,
+  class: 'myiframe'
+};
+
+const content = {
+  type: script,
+  append: 'body',
+  content: `alert('This executed from iframe')`,
+  attr: {
+    async: true
+  },
+};
+
+
+
+
+
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Khelmohr/test/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
