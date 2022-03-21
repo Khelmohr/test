@@ -96,14 +96,6 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
       options: {eventName: 'CustomEventName'}
     };
 
-    async function createIframe(){
-      iframe = new iFrameX(options);
-      iframe.create();
-      iframe.gateway = function (data) { // Parent listener
-        console.log(data);
-        iframe.sendMessage('CustomEventName', {date: new Date(), message: "Sent from parent to iframe"}); // Parent sender
-      }
-    }
   </script>
 
 
