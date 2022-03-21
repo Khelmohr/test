@@ -34,7 +34,7 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
   <script src="../iFrameX/dist/iframex.min.js"></script>
   
   <!-- Example button -->
-  <script onload="createIframe()"></script>
+  <body onload="createIframe()"></body>
   
   <!--- Create variable and functions for initialize iFrameX with configuration -->
     <script>
