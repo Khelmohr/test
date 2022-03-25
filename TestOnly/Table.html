@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert JSON Data to HTML Table</title>
+
+
+</head>
+<body>
+
+    <p id="text"></p>
+
+</body>
+
+<script>
+
+
+fetch("https://github.com/Khelmohr/test/blob/main/Table.json")
+    .then(function(resp){
+        return resp.json();
+
+    })
+    .then(function(data){
+        console.log(data)
+    })
+
+document.getElementById("text").innerHTML = 
+people[1].name + " is " + people[1].age + " years old.";
+
+
+</script>
+</html>
