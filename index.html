@@ -1,113 +1,106 @@
 
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html>
+<title>Impacto UFG</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Util/w3.css">
+
+<style>
+
+.header {
+  padding: 10px;
+  text-align: left;
+  text-indent: 100px;
+  line-height: 10px;
+  background: #0f0052;
+  color: white;
+  font-size: 20px;
+}
+
+
+.content iframe {
+  width: 78%;
+  min-height: 500px;
+  position: absolute;
+  display: block;
+  margin-left: 20%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div class = "header">
+    <h1>Impacto UFG</h1>
+    <p>Subtitulo</p>
+  </div>
+
+<!-- Topbar -->
+<div class="w3-bar w3-border w3-card-4 w3-light-gray">
+    <a href="#" class="w3-bar-item w3-button w3-bottombar w3-hover-red">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-bottombar w3-hover-red">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-bottombar w3-hover-red">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-bottombar w3-gray w3-hover-red">Dados</a>
+    <a href="#" class="w3-bar-item w3-button w3-bottombar w3-hover-red">Link 3</a>
+  </div>
+
+<!-- Leftbar -->
+
+<div class="w3-sidebar w3-bar-block w3-dark-gray" style="width:20%">
+    <button class="w3-bar-item w3-button w3-hover-white w3-border-bottom tablink" onclick="switchPage(event, 'ProjetosUA')">Projetos</button>
+    <button class="w3-bar-item w3-button w3-hover-white w3-border-bottom tablink" onclick="switchPage(event, 'WordCloud')">Word Cloud</button>
+    <button class="w3-bar-item w3-button w3-hover-white w3-border-bottom tablink" onclick="switchPage(event, 'EmpresasEgressos')">Empresas de Egressos</button>
+  </div>
+
+
+
+<!-- Content -->
+<div class = "content">
     
-    <meta charset="UTF-8">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Welcome to GitHub Pages | test</title>
-<meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Welcome to GitHub Pages" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://khelmohr.github.io/test/" />
-<meta property="og:url" content="https://khelmohr.github.io/test/" />
-<meta property="og:site_name" content="test" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Welcome to GitHub Pages" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Welcome to GitHub Pages","name":"test","url":"https://khelmohr.github.io/test/"}</script>
-<!-- End Jekyll SEO tag -->
+<div id="ProjetosUA" class="w3-container tabcontent" display="none">
+    <iframe src="Pages/ProjetosUA.html" style="border:none" scrolling="no" onload="this.style.height=(this.contentWindow.document.
+    body.scrollHeight+20)+'px';">
+    </iframe>
+</div>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/test/assets/css/style.css?v=1456b44069c2d7957ac2510cee7b339935a74ff3">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+<div id="WordCloud" class="w3-container tabcontent" display="none">
+    <iframe src="Pages/WordCloud.html" style="border:none" scrolling="no" onload="this.style.height=(this.contentWindow.document.
+    body.scrollHeight+20)+'px';">
+    </iframe>
+</div>
 
-<!-- Setup Google Analytics -->
+<div id="EmpresasEgressos" class="w3-container tabcontent" display="none">
+    <iframe src="Pages/EmpresasEgressos.html" onload="resizeIframe(this)" style="border:none" scrolling="yes" onload="this.style.height=(this.contentWindow.document.
+    body.scrollHeight+20)+'px';">
+    </iframe>
+</div>
 
 
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/test/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
-    <header class="page-header" role="banner">
-      <h1 class="project-name">Welcome to GitHub Pages</h1>
-      <h2 class="project-tagline"></h2>
-      
-        <a href="https://github.com/Khelmohr/test" class="btn">View on GitHub</a>
-      
-      
-    </header>
-
-    <main id="content" class="main-content" role="main">
-      <h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
-
-<p>You can use the <a href="https://github.com/Khelmohr/test/edit/main/README.md">editor on GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
-
-<p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to rebuild the pages in your site, from the content in your Markdown files.</p>
-
-<h3 id="markdown">Markdown</h3>
-
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax highlighted code block
-
-<span class="gh"># Header 1</span>
-<span class="gu">## Header 2</span>
-<span class="gu">### Header 3</span>
-<span class="p">
--</span> Bulleted
-<span class="p">-</span> List
-<span class="p">
-1.</span> Numbered
-<span class="p">2.</span> List
-
-<span class="gs">**Bold**</span> and _Italic_ and <span class="sb">`Code`</span> text
-
-<span class="p">[</span><span class="nv">Link</span><span class="p">](</span><span class="sx">url</span><span class="p">)</span> and !<span class="p">[</span><span class="nv">Image</span><span class="p">](</span><span class="sx">src</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>For more details see <a href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a>.</p>
-
- 
-<iframe src="test.html" frameborder="0" scrolling="no" title="Example" onload="resizeIframe(this)"></iframe>      
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-  }
-</script>
-
-      
-<iframe src="test.html" frameborder="0" scrolling="no" title="Example" width="500" height="500"></iframe>     
-      
-<h3 id="jekyll-themes">Jekyll Themes</h3>
-
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Khelmohr/test/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
-
-<h3 id="support-or-contact">Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+</div>
 
 
+  <script type="text/javascript" src="Util/SwitchPage.js"></script>
 
-      <footer class="site-footer">
-        
-          <span class="site-footer-owner"><a href="https://github.com/Khelmohr/test">test</a> is maintained by <a href="https://github.com/Khelmohr">Khelmohr</a>.</span>
-        
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-    </main>
-  </body>
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
+
+
+</body>
 </html>
+
+
