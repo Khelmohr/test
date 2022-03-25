@@ -9,7 +9,7 @@
 <body>
     <div id="myData"></div>
     <script>
-        fetch("https://github.com/Khelmohr/test/blob/main/TestOnly/people.json")
+        fetch("https://github.com/Khelmohr/test/blob/main/TestOnly/people.json", { mode: 'no-cors'})
             .then(function (response) {
                 return response.json();
             })
